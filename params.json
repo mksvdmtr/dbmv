@@ -1,0 +1,11 @@
+[
+	{
+		"src_db": "srcdb",
+		"src_host": "localhost",
+		"src_user": "srcuser",
+		"src_password": "srcpass",
+		"dst_db": "dstdb",
+		"dst_user": "dstuser",
+		"dst_password": "dstpass"
+	}
+]

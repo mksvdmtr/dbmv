@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  srcdb:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: srcuser
+      POSTGRES_DB: srcdb
+      POSTGRES_PASSWORD: srcpass
+    ports:
+      - "5432:5432"
+
+  dstdb:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: dstuser
+      POSTGRES_DB: dstdb
+      POSTGRES_PASSWORD: dstpass
+    ports:
+      - "5433:5432"
