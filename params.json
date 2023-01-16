@@ -2,6 +2,7 @@
 	{
 		"src_db": "srcdb",
 		"src_host": "localhost",
+		"src_port": "5432",
 		"src_user": "srcuser",
 		"src_password": "srcpass",
 		"dst_db": "dstdb",

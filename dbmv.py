@@ -15,7 +15,7 @@ with open('params.json') as json_file:
  
 for i in data:
     dump_cmd = 'PGPASSWORD=' + i['src_password'] + ' pg_dump -h '\
-            + i['src_host'] + ' -U ' + i['src_user'] + ' -d '\
+            + i['src_host'] + ' -p ' + i['src_port'] + ' -U ' + i['src_user'] + ' -d '\
             + i['src_db'] + '  -c -O --if-exists > /tmp/' + i['src_db']
     
     logging.info('Creating dump from %s', i['src_db'])
